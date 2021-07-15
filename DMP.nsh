@@ -1,6 +1,6 @@
 echo -off
 
-# GIT 
+# GIT https://github.com/richards-AMI/dmp.nsh
 
 # START
 	echo " "
@@ -31,6 +31,7 @@ if  x%1 ne x  then
 else   #filename not provided by user
 	  date > AMI_DMP.log
 	  time >> AMI_DMP.log
+      echo "  DMP.nsh LBXX_DMP.log " 
 
 	  for %a in drivers memmap pci 
 		  echo " " >> AMI_DMP.log
